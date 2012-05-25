@@ -18,6 +18,10 @@ Example usage:
     [('lysol', 1)]
     >>> c.suggest('lys', 3)
     [('lysol', 1), ('ulysses', 3), ('analyse', 1), ('analyst', 1)]
+    >>> c.correct('sug')
+    'sugar'
+    >>> c.correct('sug', 10)
+    'suggested'
 
 Uses the n-grams partitioning method to index training text. Faaar from 
 anything near perfect. I'm improv[is]ing on it. Obviously, result quality 
